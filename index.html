@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&family=Red+Hat+Display:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="src/calculation.js"></script>
+    <title>Calculadora Neon</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora Simples</h1>
+        <div class="square">
+            <p id="calc">0</p>
+            <p id="rest"></p>
+        </div>
+        <table>
+            <tr>
+                <td><button class="button-del" onclick="clean()">C</button></td>
+                <td><button class="button-del" onclick="back()"><</button></td>
+                <td><button class="button-git" onclick="git()">G</button></td>
+                <td><button class="button-ope" onclick="insert('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="button-nub" onclick="insert('7')">7</button></td>
+                <td><button class="button-nub" onclick="insert('8')">8</button></td>
+                <td><button class="button-nub" onclick="insert('9')">9</button></td>
+                <td><button class="button-ope" onclick="insert('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="button-nub" onclick="insert('4')">4</button></td>
+                <td><button class="button-nub" onclick="insert('5')">5</button></td>
+                <td><button class="button-nub" onclick="insert('6')">6</button></td>
+                <td><button class="button-ope" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="button-nub" onclick="insert('1')">1</button></td>
+                <td><button class="button-nub" onclick="insert('2')">2</button></td>
+                <td><button class="button-nub" onclick="insert('3')">3</button></td>
+                <td><button class="button-ope" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="button-nub" onclick="insert('0')">0</button></td>
+                <td><button class="button-nub" onclick="insert('00')">00</button></td>
+                <td><button class="button-nub" onclick="insert('.')">.</button></td>
+                <td><button class="button-ope" onclick="full()">=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
