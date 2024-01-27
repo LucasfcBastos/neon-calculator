@@ -12,6 +12,7 @@ body {
 h1 {
     color:rgb(255, 255, 255);
     text-align: center;
+    font-size: 6vh;
 }
 
 .calculator {
@@ -19,54 +20,51 @@ h1 {
     background-color: rgb(0, 0, 0);
     left: 50%;
     transform: translate(-50%);
-    width: 459px;
+    width: 74.5vh;
     height: 100vh;
 }
 
 .square {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 25px;
-    width: 429px;
-    height: 95px;
-    border: 5px solid #FF00FF;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    margin-bottom: 2.5vh;
+    width: 70.5vh;
+    height: 15.2vh;
+    border: 1vh solid #FF00FF;
 }
 
 #calc {
     color: rgb(255, 255, 255);
-    border-right: 50%;
-    font-size: 40px;
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 420px;
-    height: 45px;
+    font-size: 6.5vh;
+    margin-top: 0.5vh;
+    margin-left: 1vh;
+    width: 68.5vh;
     text-align: right;
 }
 
 #rest {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 30px;
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 420px;
-    height: 35px;
+    font-size: 4.5vh;
+    margin-top: 0px;
+    margin-left: 1vh;
+    width: 68.5vh;
     text-align: right;
 }
 
 button {
-    width: 60px;
-    height: 60px;
+    width: 11vh;
+    height: 11vh;
     background-color: transparent;
     border-radius: 100%;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    font-size: 40px;
-    border-width: 5px;
+    margin-left: 5vh;
+    margin-bottom: 3vh;
+    font-size: 6vh;
+    border-width: 1vh;
     cursor: pointer;
 }
 
 table {
-    margin-left:45px;
+    margin-left: 3vh;
 }
 
 .button-nub {
