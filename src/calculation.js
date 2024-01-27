@@ -23,21 +23,30 @@ function clean() {
 }
 
 function back() {
-    var calc = document.getElementById('calc').innerHTML;
-    document.getElementById('calc').innerHTML = calc.substring(0, calc.length - 1);
+    var calcElement = document.getElementById('calc');
+    var calc = calcElement.innerHTML;
+    var novaCalc = calc.substring(0, calc.length - 1);
+
+    if (novaCalc === '') {
+        novaCalc = '0';
+    }
+
+    calcElement.innerHTML = novaCalc;
 }
+
+
 function full() {
     var result = document.getElementById('calc').innerHTML;
-    
     result = result.replace(/,/g, '.');
 
     if (result) {
         document.getElementById('rest').innerHTML = eval(result);
-        document.getElementById('calc').innerHTML = "";
+        document.getElementById('calc').innerHTML = "0";
     } else {
         document.getElementById('rest').innerHTML = "0";
     }
 }
+
 function git(){
     var Link = "https://github.com/LucasfcBastos";
     window.open(Link, "_blank");
